@@ -1,23 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import { useState } from 'react';
+import CarouselArea from './components/CarouselArea';
 
 function App() {
+
+  const [projects, setProjects] = useState([
+    {
+      'id' : 0,
+      'symbol' : 'http://axa.gov.az/uploads/images/services/logo-a-1666340461-6352566d2f947.webp',
+      'head' : 'DAIM'
+    },
+    {
+      id : 1,
+      'symbol' : 'http://axa.gov.az/uploads/images/services/vector-1663146623-63219a7f68bb5.webp',
+      'head' : 'Aqrokimyəvi analizlərin aparılması'
+    },
+    { id : 2,
+      'symbol' : 'http://axa.gov.az/uploads/images/services/ekinci-1663146181-632198c5008a5.webp',
+      'head' : 'EKTİS'
+    },
+    {
+      id : 3,
+      'symbol' : 'http://axa.gov.az/uploads/images/services/yonca-1663146733-63219aed3859b.webp',
+      'head' : 'Toxumu yoxla'
+    },
+    {
+      id : 4,
+      'symbol' : 'http://axa.gov.az/uploads/images/services/surucu-1663410946-6325a30297cc8.webp',
+      'head' : 'Sürücülük vəsiqəsinin verilməsi'
+    },
+    {
+      id : 5,
+      'symbol' : 'http://axa.gov.az/uploads/images/services/dibcek-1663146492-632199fc49d22.webp',
+      'head' : 'Bitki sortlarının qeydiyyatı'
+    }
+  ]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Navbar />
+    <CarouselArea projects={projects} />
     </div>
   );
 }

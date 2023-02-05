@@ -1,38 +1,259 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Inter;
+  padding: 0px;
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: Inter;
+  src: url('./Font/Inter-Regular.ttf');
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: Inter;
+  src: url('./Font/Inter-Medium.ttf');
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+@font-face {
+  font-family: Inter;
+  src: url('./Font/Inter-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('./Font/Inter-Bold.ttf');
+  font-weight: 700;
+}
+
+.navbarBackground {
+  background: url('http://axa.gov.az/uploads/images/settings/origin-1662659595.webp') no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.forheight {
+  margin-top: 10%
+}
+
+/* NAVBARTOP  */
+
+.nav-area {
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0px 5px;
+  padding: 8px 0px;
+}
+
+.logo-area {
+  max-width: 50%;
+  padding: 0px;
+}
+
+.logo-area a {
+  padding: 0px 15px;
+}
+
+.nav-right {
+  align-items: center;
+  vertical-align: middle;
+  padding: 0px 15px;
+  height: 100%;
+}
+
+.nav-right ul {
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+  padding: 0px;
+  height: 100%;
+  margin: 0px;
+  align-items: center;
+}
+
+.nav-right ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* NAVBAR TOP END */
+
+/* NAVBAR CENTER  */
+
+.cards-area {
+  height: 50vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards-area .row .col-lg-6 {
+  padding: 0px;
+  height: 100%;
+}
+
+.la {
+  height: 100%;
+}
+
+.formargin {
+  margin: 0px 10px;
+  height: 100%;
+  border-left: 2px solid white;
+}
+
+.card-area {
+  padding: 50px 10px;
+  height: 100%;
+}
+
+.card-area a {
+  color: white;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.outline {
+  margin: 0px !important;
+  height: 100%;
+}
+
+.formargin {
+  height: 100%;
+}
+
+.outline :hover .card-area {
+  background-color: white;
+  border-top-right-radius: 60px 60px;
+}
+
+.outline :hover .card-area a {
+  color: hsl(173deg 72% 28%);
+}
+
+.outline:hover .formargin {
+  border-top-right-radius: 60px 60px;
+  border: 1px solid white;
+}
+
+.card-area .green-img {
+  display: none;
+}
+
+.formargin:hover .white-img {
+  display: none !important;
+}
+
+.formargin:hover .green-img {
+  display: block !important;
+}
+
+.outline:hover p {
+  border-top: 2px solid hsl(173deg 72% 28%);
+}
+
+.card-area .white-img {
+  padding: 0px 0px 8px;
+  height: 38px !important;
+  filter: brightness(100);
+  -webkit-filter: brightness(100);
+}
+
+.card-area .green-img {
+  padding: 0px 0px 8px;
+  height: 38px !important;
+}
+
+.card-area h4 {
+  height: 110px;
+  font-size: 17px;
+  font-weight: 600;
+  text-size-adjust: 100%;
+}
+
+.card-area p {
+  font-size: 13px;
+  padding-top: 10px;
+  font-weight: 500;
+  overflow-wrap: break-word;
+  border-top: 2px solid white;
+}
+
+/* NAVBAR CENTER END  */
+
+/* MAIN CAROUSEL  */
+
+.trackc {
+  position: relative;
+}
+
+.trackc > * {
+  position: static;
+}
+
+.react-multiple-carousel__arrow {
+  background-color: white;
+}
+
+.react-multiple-carousel__arrow::before {
+  background-color: white;
+  font-size: 60px;
+  color: hsl(173deg 72% 28%);
+}
+
+.trackc .multiple-carousel__arrow--left {
+  left: 5px;
+}
+
+.main-carousel-item {
+  width: 250px;
+  display: block;
+  text-decoration: none;
+  padding: 8px;
+  height: 165px;
+  border-radius: 15px;
+  background-color: white;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.main-carousel-item:hover {
+  background-color: hsl(173deg 72% 28%);
+}
+
+.main-carousel-item:hover p {
+  color: white;
+}
+
+.main-carousel-item:hover img {
+  filter: brightness(100);
+  -webkit-filter: brightness(100);
+}
+
+.main-carousel-item img {
+  padding-top: 10px;
+  margin: 8px 0px;
+}
+
+.main-carousel-item p {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 16px 0px;
+  color: hsl(173deg 72% 28%);
+}
+
+.trackc {
+  background-color: hsl(0deg 0% 98%);
+}
+
+.react-multi-carousel-track {
 }
