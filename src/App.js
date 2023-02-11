@@ -4,6 +4,7 @@ import { useState } from 'react';
 import CarouselArea from './components/CarouselArea';
 import FirstNews from './components/FirstNews';
 import Banners from './components/Banners';
+import ContactUs from './components/ContactUs';
 
 function App() {
 
@@ -46,6 +47,7 @@ function App() {
       <CarouselArea projects={projects} />
       <FirstNews />
       <Banners />
+      <ContactUs />
     </div>
   );
 }

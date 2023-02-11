@@ -38,12 +38,120 @@
 }
 
 .forheight {
-  margin-top: 10%
+  padding-top: 10%;
 }
 
 .container {
   max-width: 1140px;
 }
+
+/* SMALL SCREEN START */
+
+@media screen and (max-width: 768px) {
+
+  .nav-right {
+    display: none;
+  }
+
+  .logo-area img {
+    width: 100%;
+    padding: 10px 0px !important;
+  }
+  
+  .forheight .row {
+    margin: 0px !important;
+    margin-top: 15px !important;
+  }
+
+  .cards-area {
+    padding: 0px !important;
+  }
+
+  .cards-area .col-lg-6 {
+    padding: 0px !important;
+    margin: 4px 0px !important;
+  }
+
+  .formargin {
+    width: 94% !important;
+    border: 2px solid white !important;
+    margin: 1px auto !important;
+    border-top-right-radius: 60px;
+  }
+
+  .for-margin .card-area {
+    text-align: center;
+    height: 99% !important;
+  }
+
+  .formargin .card-area a p {
+    display: none !important;
+    text-align: center !important;
+  }
+
+  .formargin img {
+    display: block;
+    margin: 0px auto !important;
+  }
+
+  .formargin h4 {
+    border-top: 3px solid white;
+    font-size: 14px !important;
+    margin-top: 16px !important;
+    padding-top: 16px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+    height: 70px !important;
+  }
+
+  .formargin:hover h4 {
+    border-top: 3px solid hsl(173deg 72% 28%);
+  }
+
+  .for-map {
+    display: none !important;
+  }
+
+  .news-right {
+    display: none !important;
+  }
+
+  .mobile-service {
+    position: relative;
+  }
+
+  .mobile-service img {
+    width: 100%;
+    height: 286px !important;
+  }
+
+  .mobile-service h3 {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .mobile-service a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .gray-block {
+    height: 286px;
+    background-color: hsl(180deg 16% 42%);
+  }
+
+  .contactUs {
+    padding: 20px 15px !important;
+  }
+
+  .contactUs .inputt {
+    width: 100% !important;
+  }
+
+}
+
+/* SMALL SCREEN END  */
 
 /* NAVBARTOP  */
 
@@ -58,8 +166,30 @@
 .nav-area {
   justify-content: space-between;
   align-items: center;
-  margin: 0px 5px;
+  position: fixed;
+  z-index: 10;
+  margin: 0px -15px;
+  left: 15px;
+  top: 0%;
+  width: 100%;
+  overflow: hidden !important;
+  padding: 0.5rem 0rem;
   padding: 8px 0px;
+}
+
+.nav-area2 {
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  margin: 0px -15px;
+  left: 15px;
+  top: 0%;
+  width: 100%;
+  overflow: hidden !important;
+  padding: 0.5rem 0rem;
+  padding: 8px 0px;
+  background-color: white;
 }
 
 .logo-area {
@@ -69,6 +199,14 @@
 
 .logo-area a {
   padding: 0px 15px;
+}
+
+.hasLogo {
+  display: inline-block;
+}
+
+.noneLogo {
+  display: none;
 }
 
 .nav-right {
@@ -88,12 +226,20 @@
   align-items: center;
 }
 
-.nav-right ul li a {
+.navLinks {
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
   color: white;
+}
+
+.navLinks2 {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: hsl(173deg 72% 28%);
 }
 
 /* NAVBAR TOP END */
@@ -211,6 +357,7 @@
 
 .react-multiple-carousel__arrow {
   background-color: white;
+  z-index: 2 !important;
 }
 
 .react-multiple-carousel__arrow::before {
@@ -426,3 +573,64 @@
   color: white;
 }
 
+/* CONTACT US  */
+
+.contactUs {
+  padding: 0px 70px;
+}
+
+.for-color {
+  font-size: 24px;
+  font-weight: 600;
+  color: hsl(173deg 72% 28%);
+}
+
+.for-input {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+}
+
+.for-input label {
+  margin-bottom: 20px;
+}
+
+.for-input input {
+  border: none;
+  border-bottom: 1px solid hsl(147deg, 5%, 64%);
+  margin-bottom: 20px;
+  overflow: visible;
+}
+
+.inputs-area label {
+  color: hsl(147deg 5% 64%);;
+}
+
+.inputs-area input:focus {
+  outline: none;
+}
+
+.inputs-area button {
+  padding: 10px 80px;
+  margin-top: 20px;
+  border: none;
+  background-color: hsl(173deg 72% 28%);
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.about-text {
+  width: 700px;
+  margin-top: 20px;
+}
+
+.about-text p {
+  color: black;
+}

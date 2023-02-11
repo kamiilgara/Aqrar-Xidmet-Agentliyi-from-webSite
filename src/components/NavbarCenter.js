@@ -1,55 +1,8 @@
-import { faFlask, faHandHoldingHeart, faMosquito } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import { Card, Col, Container, Row } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 
 function NavbarCenter() {
     return (
-        // <Container>
-        //     <Row className='outCol'>
-        //         <Col md={'2'}>
-        //             <div className='inCol'>
-        //                 <FontAwesomeIcon icon={faFlask} />
-        //                 <h4>Laboratoriya Ekspertiza və Sertifikatlaşdırma Mərkəzi</h4>
-        //                 <p>
-
-        //                     Aqrokimyəvi, baytarlıq, toxumçuluq laboratoriya xidmətləri, texniki ekspertiza və sertifikatlaşdırma xidmətləri
-
-        //                 </p>
-        //             </div></Col>
-        //         <Col md={'2'}>
-        //             <div className='inCol'>
-        //                 <FontAwesomeIcon icon={faFlask} />
-        //                 <h4>Laboratoriya Ekspertiza və Sertifikatlaşdırma Mərkəzi</h4>
-        //                 <p>
-
-        //                     Aqrokimyəvi, baytarlıq, toxumçuluq laboratoriya xidmətləri, texniki ekspertiza və sertifikatlaşdırma xidmətləri
-
-        //                 </p>
-        //             </div></Col>
-        //         <Col md={'2'}>
-        //             <div className='inCol'>
-        //                 <FontAwesomeIcon icon={faFlask} />
-        //                 <h4>Laboratoriya Ekspertiza və Sertifikatlaşdırma Mərkəzi</h4>
-        //                 <p>
-
-        //                     Aqrokimyəvi, baytarlıq, toxumçuluq laboratoriya xidmətləri, texniki ekspertiza və sertifikatlaşdırma xidmətləri
-
-        //                 </p>
-        //             </div></Col>
-        //         <Col md={'2'}>
-        //             <div className='inCol'>
-        //                 <FontAwesomeIcon icon={faFlask} />
-        //                 <h4>Laboratoriya Ekspertiza və Sertifikatlaşdırma Mərkəzi</h4>
-        //                 <p>
-
-        //                     Aqrokimyəvi, baytarlıq, toxumçuluq laboratoriya xidmətləri, texniki ekspertiza və sertifikatlaşdırma xidmətləri
-
-        //                 </p>
-        //             </div>
-        //         </Col>
-        //     </Row>
-        // </Container>
 
         <Container className='forheight'>
             <Row className='w-100 justify-content-center mr-0 ml-1'>
